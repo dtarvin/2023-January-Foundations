@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-image: url(./vector-speaker-1680x1050.jpg);
+    color: #fff;
+    font: 16px/1.4 "Nanum Myeongjo", serif;
+}
+header {
+    width: 40%;
+}
+h1 {
+    text-align: center;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+header, form, button, footer {
+    margin: 2em;
+}
+
+form {
+    width: 40%;
+}
+.enterInfo {
+    display: block;
+    width: 40%;
+}
+.enterInfo > input {
+    float: right;
+}
+fieldset {
+    border: 0;
+    padding: 1em 0;
+}
+legend {
+    padding-top: 1em;
+}

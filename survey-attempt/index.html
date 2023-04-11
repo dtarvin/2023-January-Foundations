@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Survey</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>iTunesGifts Music Survey</h1>
+        <p>
+            Congratulations! You are one step away from your $100 iTunes 
+            Gift Card! Just complete the following survey and you will 
+            qualify!
+        </p>
+        <p>
+            Completing the following survey you will enable us to 
+            customize the music offers we send to you each week. 
+            Please be assured that your information will be kept 
+            private and will not be shared with any other 
+            organization.
+        </p>
+    </header>
+    <form action="https://www.mccinfo.net/webresources/cgi-bin/formmail.asp" method="post">
+        <label for="firstName" class="enterInfo">
+            First Name: 
+            <input type="text" id="firstName" name="firstName" required>
+        </label>
+        <label for="lastName" class="enterInfo">
+            Last Name: 
+            <input type="text" id="lastName" name="lastName" required>
+        </label>
+        <label for="email" class="enterInfo">
+            Email: 
+            <input type="text" id="email" name="email" required>
+        </label>
+
+        <fieldset>
+            <legend>Select Your Favorite Types Of Music To Stream</legend>
+            <input type="checkbox" name="musicTypes" value="pop" id="pop">
+            <label for="pop">Pop</label>
+            <input type="checkbox" name="musicTypes" value="country" id="country">
+            <label for="country">Country</label>
+            <input type="checkbox" name="musicTypes" value="rock" id="rock">
+            <label for="rock">Rock</label>
+            <input type="checkbox" name="musicTypes" value="hiphop" id="hiphop">
+            <label for="hiphop">Hip-hop</label>
+            <input type="checkbox" name="musicTypes" value="classical" id="classical">
+            <label for="classical">Classical</label>
+            <input type="checkbox" name="musicTypes" value="other" id="other">
+            <label for="other">Other</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Select How Often You Listen To Streaming Music</legend>
+            <input type="radio" name="frequency" id="several" value="several">
+            <label for="several">Several times a day</label>
+            <input type="radio" name="frequency" id="daily" value="daily">
+            <label for="daily">Once a day</label>
+            <input type="radio" name="frequency" id="weekly" value="weekly">
+            <label for="weekly">One or more times a week</label>
+            <input type="radio" name="frequency" id="less" value="less">
+            <label for="less">Less than once a week</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select Which Source For Music You Use Most Often</legend>
+            <select name="musicSource" id="musicSource" size="1">
+                <option value="empty"></option>
+                <option value="apple">Apple Music</option>
+                <option value="amazon">Amazon Music</option>
+                <option value="pandora">Pandora</option>
+                <option value="spotify">Spotify</option>
+                <option value="none">None of the above</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>What Role Does Music Play In Your Life</legend>
+            <textarea name="comments" id="comments" cols="60" rows="5"></textarea>
+        </fieldset>
+
+        <input type="submit" id="submit" value="Submit">
+        <input type="reset" id="reset" value="Clear Form">
+
+        <!-- Hidden inputs -->
+        <input type="hidden" name="recipient" value="drtarvin@mail.mccneb.edu">
+        <input type="hidden" name="subject" value="Music Survey">
+        <input type="hidden" name="return_link_title" value="Return to Survey">
+    </form>
+    <footer>
+        <a href="mailto:david.tarvin@gmail.com">david.tarvin@gmail.com</a>
+    </footer>
+</body>
+</html>
